@@ -1,3 +1,4 @@
+from .light_matrix import LightMatrix
 from .status_light import StatusLight
 from .button import Button
 
@@ -14,3 +15,4 @@ class MSHub:
         self.left_button = Button()
         self.right_button = Button()
         self.status_light = StatusLight()
+        self.light_matrix = LightMatrix()
