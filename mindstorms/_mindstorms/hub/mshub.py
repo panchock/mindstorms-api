@@ -1,8 +1,8 @@
-from .status_light import _StatusLight
-from .button import _Button
+from .status_light import StatusLight
+from .button import Button
 
 
-class MSHub():
+class MSHub:
     PORT_A = "A"
     PORT_B = "B"
     PORT_C = "C"
@@ -11,6 +11,6 @@ class MSHub():
     PORT_F = "F"
 
     def __init__(self) -> None:
-        self.left_button = _Button()
-        self.right_button = _Button()
-        self.status_light = _StatusLight()
+        self.left_button = Button()
+        self.right_button = Button()
+        self.status_light = StatusLight()
